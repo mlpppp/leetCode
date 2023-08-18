@@ -111,8 +111,8 @@ see [here](../DataStructure/AdvStructures.md#Heap)
 - partition算法
   - A[mid] 使用的值是初始A[right]的值 (pivot value)
   - 双指针算法：pEdit 和 pSearch
-    - pSearch寻找比pivot小的元素, 如果找到了就与当前的pEdit交换， 并且pEdit++
-    - pEdit 永远都指向pivot小的元素区域的最前端
+    - pSearch每回合++寻找比pivot小的元素, 如果找到了就与当前的pEdit交换， 并且pEdit++
+    - pEdit 永远都指向pivot小的元素区域的最前端 (因为pEdit只有在pSearch找到的回合向前走)
 ```py
 def partition(A, left, right):
     pivot = A[right]

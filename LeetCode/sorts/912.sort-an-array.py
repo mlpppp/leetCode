@@ -15,7 +15,7 @@ class Solution:
             nums[i] = nums[j]
             nums[j] = temp
             return 
-    def partition(self, nums, left, right):
+    def partition(self, nums, left, right):   # O(n)
         pivot = nums[right]
         pEdit = pSearch = left
         while (pSearch < right):
@@ -25,20 +25,7 @@ class Solution:
             pSearch+=1
         self.swap(nums, pEdit, right)
         return pEdit
-    # def partition(self, nums, left, right):
-    #     pivot = nums[left]
-    #     pLeft = left+1 
-    #     pRight = right
-    #     while(pLeft <= pRight):
-    #         while(pLeft < right and nums[pLeft]<=pivot):
-    #             pLeft+=1
-    #         while(pRight > left and nums[pRight]>pivot):
-    #             pRight-=1
-    #         if(pLeft >= pRight):
-    #             break
-    #         self.swap(nums, pLeft, pRight)
-    #     self.swap(nums, left, pRight)          
-    #     return pRight
+
 
     def quickSort(self, nums, left, right):
         if left >= right: return None

@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "LeetCode.sorts.Solution",
+            "projectName": "LeetCode_33289f1d"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "LeetCode_33289f1d"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
