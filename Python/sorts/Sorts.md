@@ -1,21 +1,5 @@
 # insertion sort (O(n^2))
 ## type: brute force
-- worst case $O(N^2)$
-   
->I: A[1..n]
-
->O: A[1..n] sorted (incr)
-
-```js
-for (let i = 1; i < D.length; i++) {
-  const key = D[i];
-  let j;
-  for (j = i - 1; (j >= 0) && (D[j] > key); j--) {
-    D[j + 1] = D[j];
-  }
-  D[j + 1] = key;
-}
-```
 
 - 将链表划分为2块，前半为有序区后半为无序区。算法的目的是由初始：len==1 增长有序区，每次从无序区添加一个element将它插入到有序区中正确的位置。
 
@@ -33,6 +17,30 @@ insertion sort()
             OR j == 0     
         move value of D[j] to D[j+1]
     set D[j+1] to D[i]
+```
+
+```java
+// Java program for implementation of Insertion Sort
+public class InsertionSort {
+	/*Function to sort array using insertion sort*/
+	void sort(int arr[])
+	{
+		int n = arr.length;
+		for (int i = 1; i < n; ++i) {
+			int key = arr[i];
+			int j = i - 1;
+
+			/* Move elements of arr[0..i-1], that are
+			greater than key, to one position ahead
+			of their current position */
+			while (j >= 0 && arr[j] > key) {
+				arr[j + 1] = arr[j];
+				j = j - 1;
+			}
+			arr[j + 1] = key;
+		}
+	}
+};
 ```
 
 # mergeSort()
@@ -94,6 +102,7 @@ def mergeSort(L):
   - ==> O(nlogn)
 - Auxiliary Space: O(n)
 - not in-place
+
 # heapSort()
 see [here](../DataStructure/AdvStructures.md#Heap)
 
