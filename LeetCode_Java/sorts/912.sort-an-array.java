@@ -1,4 +1,4 @@
-package LeetCode.sorts;
+package LeetCode_Java.sorts;
 
 /*
  * @lc app=leetcode id=948 lang=java

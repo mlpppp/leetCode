@@ -6,16 +6,9 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Solution",
+            "name": "FilpSort",
             "request": "launch",
-            "mainClass": "LeetCode.sorts.Solution",
-            "projectName": "LeetCode_33289f1d"
-        },
-        {
-            "type": "java",
-            "name": "Solution",
-            "request": "launch",
-            "mainClass": "Solution",
+            "mainClass": "Interviews.FilpSort",
             "projectName": "LeetCode_33289f1d"
         },
         {
