@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LongBit",
+            "request": "launch",
+            "mainClass": "Interviews.TrendMicro.LongBit",
+            "projectName": "LeetCode_33289f1d"
+        },
+        {
+            "type": "java",
+            "name": "OneSwapSort",
+            "request": "launch",
+            "mainClass": "LeetCode_Java.OneSwapSort",
+            "projectName": "LeetCode_33289f1d"
+        },
+        {
+            "type": "java",
+            "name": "LongBit",
+            "request": "launch",
+            "mainClass": "LeetCode_Java.LongBit",
+            "projectName": "LeetCode_33289f1d"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "LeetCode_Java.Solution",
+            "projectName": "LeetCode_33289f1d"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "LeetCode_33289f1d"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "LeetCode_Java.BitOperation.Solution",
+            "projectName": "LeetCode_33289f1d"
+        },
+        {
+            "type": "java",
+            "name": "sol",
+            "request": "launch",
+            "mainClass": "sol",
+            "projectName": "LeetCode_33289f1d"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "LeetCode_Java.sorts.Solution",
+            "projectName": "LeetCode_33289f1d"
+        },
+        {
+            "type": "java",
             "name": "FilpSort",
             "request": "launch",
             "mainClass": "Interviews.FilpSort",
