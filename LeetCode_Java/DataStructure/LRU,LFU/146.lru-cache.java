@@ -8,6 +8,30 @@
 
 import java.util.HashMap;
 
+class LRUCache {
+    LinkedHashMapImpl linkedHashMap;
+    public LRUCache(int capacity) {
+        linkedHashMap = new LinkedHashMapImpl();
+        linkedHashMap.initLRU(capacity);
+    }
+    
+    public int get(int key) {
+        return linkedHashMap.get(key);
+    }
+    
+    public void put(int key, int value) {
+        linkedHashMap.put(key, value);
+    }
+    public static void main(String[] args) {
+        LRUCache test = new LRUCache(2);
+        test.put(1, 1);
+        test.put(2, 2);
+
+        test.get(1);
+        System.out.println(test.get(3));
+    }
+    
+}
 class LinkedListNode {
     int key;
     int value;
@@ -54,7 +78,7 @@ class LinkedListNode {
     }
 }
 
-class LinkedHashMap {
+class LinkedHashMapImpl {
     int size;
     LinkedListNode head;  // most recent, no data
     LinkedListNode tail; // no data
@@ -121,30 +145,7 @@ class LinkedHashMap {
 }
 
 
-class LRUCache {
-    LinkedHashMap linkedHashMap;
-    public LRUCache(int capacity) {
-        linkedHashMap = new LinkedHashMap();
-        linkedHashMap.initLRU(capacity);
-    }
-    
-    public int get(int key) {
-        return linkedHashMap.get(key);
-    }
-    
-    public void put(int key, int value) {
-        linkedHashMap.put(key, value);
-    }
-    public static void main(String[] args) {
-        LRUCache test = new LRUCache(2);
-        test.put(1, 1);
-        test.put(2, 2);
 
-        test.get(1);
-        System.out.println(test.get(3));
-    }
-    
-}
 
 /**
  * Your LRUCache object will be instantiated and called as such:
