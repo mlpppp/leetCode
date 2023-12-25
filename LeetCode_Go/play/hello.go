@@ -1,22 +1,21 @@
 package main
 
 import (
-	"strconv"
-	"strings"
+	"fmt"
+	"math"
 )
 
-func modifySlice(s []int) {
+func modifySlice() (a, b int, is bool) {
 	// Modifying the slice inside the function
-	for i := range s {
-		s[i] *= 2
-	}
+	return 0, 0, true
 }
 
 func main() {
-	var builder strings.Builder
-	for i := 0; i < 10; i++ {
-		builder.WriteString(strconv.Itoa(i))
-		builder.WriteString(",")
-		println(builder.String())
-	}
+	// mid := math.Floor(-0.5)
+	fmt.Printf("cur index: %d\n", math.MaxInt32)
+	// fmt.Printf("cur num: %v\n", nums)
+	// fmt.Printf("Type of integerVar: %v\n", b)
+	// fmt.Println(math.Pow(2.0, 31.0))
+	// fmt.Println(-int(math.Pow(2.0, 33.0)) < -2147483648)
+
 }

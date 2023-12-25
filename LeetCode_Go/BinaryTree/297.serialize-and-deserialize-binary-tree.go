@@ -17,7 +17,6 @@
 // Encodes a tree to a single string. Implement serialize and deserialize algorithms.
 
 // Preorder Serialization (with null), DFS, append node values or null_string to string builder in preorder place. Deserizalization: The first token in string is the root. DFS and process root node token in preorder place. Then removing the first token before recursive call.
-
 // Serialization: O(n)
 // Deserialization: O(n)
 import (
