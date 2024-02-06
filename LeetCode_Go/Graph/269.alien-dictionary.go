@@ -1,10 +1,8 @@
-package main
+// https://www.youtube.com/watch?v=6kTZYvNNyps
 
-import (
-	"fmt"
-	"slices"
-)
+// Given a sorted dictionary (array of words of lower case alphabet) of an alien language, find the order of characters in the language. If there is no solution, return "". If there are multiple possible solutions, return any of them.
 
+// Example:
 // Input: words[] = {"baa", "abcd", "abca", "cab", "cad"}
 // Output: Order of characters is ‘bdac’
 // Explanation: Note that words are sorted and in the given language “baa” comes before “abcd”, therefore ‘b’ is before ‘a’ in output. Similarly we can find other orders.
@@ -96,27 +94,9 @@ func detectCycleAndOrder(graph map[byte]map[byte]bool, node byte, visited, trace
 }
 
 func main() {
-	// graph := make([][]int, 4)
-	// graph[0] = []int{1, 0}
-	// graph[1] = []int{2, 0}
-
 	fmt.Println(alienOrder([]string{"baa", "abcd", "abca", "cab", "cad"})) // bdac
 	fmt.Println(alienOrder([]string{"caa", "aaa", "aab"}))                 // cab
 	fmt.Println(alienOrder([]string{"kaa", "akcd", "akca", "cak", "cad"})) // kdac
 	fmt.Println(alienOrder([]string{"b", "a"}))                            // ba
 	fmt.Println(alienOrder([]string{"ab", "a", "b"}))                      // ""
-
-	// fmt.Println(jump([]int{2, 3, 0, 1, 4}))
-	// fmt.Println(uniquePathsWithObstacles(3, 2))
-	// fmt.Println(uniquePaths())
-	// fmt.Println(reverseWords("  hello world  "))
-	// fmt.Println(reverseWords("a good   example"))
-	// fmt.Println(maxProduct([]int{-2, 0, -1}))
-	// fmt.Println(maxProduct([]int{2, -2, 3, 6, -8, 2}))
-	// fmt.Println(maxProduct([]int{2, -2, 0, 3, 6, -8, 2}))
-
-	// fmt.Println(rangeBitwiseAnd("11", "1"))
-	// fmt.Println(rangeBitwiseAnd("0", "0"))
-	// fmt.Println(rangeBitwiseAnd("01", "1"))
-
 }
