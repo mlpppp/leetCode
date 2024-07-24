@@ -31,7 +31,6 @@ func isValidBSTHelper(root *TreeNode) (min, max *TreeNode, isBST bool) {
 	}
 
 	min, max = root, root // minimum and maximum node in the entire tree
-
 	if root.Left != nil {
 		lmin, lmax, isBST := isValidBSTHelper(root.Left)
 		if !isBST || root.Val <= lmax.Val { // early termination if not a BST
